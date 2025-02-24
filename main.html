@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Login Form</h1>
+    <form>
+      <div>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+        />
+      </div>
+      <br />
+      <div>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+      </div>
+      <br />
+      <div>
+        <input type="checkbox" id="checkbox" name="checkbox" />
+        <label for="checkbox">Remember me.</label>
+      </div>
+      <br />
+      <div>
+        <input type="submit" id="submit" value="Submit" />
+      </div>
+    </form>
+    <br />
+    <!-- This button is hidden initially and will appear if credentials are saved -->
+    <button id="existing" style="display: none;">Login as existing user</button>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
